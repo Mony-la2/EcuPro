@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'GlacialIndifferenceBold';
+}
+.grid-container {  /* index */
+    width: 100%;  /* tamaño al contenedor */
+    margin: 0 auto;  /* centrar */
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header "
+      "main"
+      "aside"
+      "footer";
+    grid-template-rows: 100px auto 150px 150px ;
+}
+
+.grid-conteiner2 {
+    width: 100%;  /* tamaño al contenedor */
+    margin: 0 auto;  /* centrar */
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "header-encabezado"
+    "main"
+    "aside"
+    "footer";
+    grid-template-rows: 100px 120px auto 150px 150px;
+}
+#header-text  {
+    grid-area:header-encabezado;
+    background-color: #1d11cc;
+    
+}
+
+#header-text h2 {
+    padding-left: 140px;
+    padding-top: 25px; 
+    color: white;  
+    font-family: 'GlacialIndifferenceBold';
+    font-size: 50px;
+    text-align:justify   
+
+}   
+#videos-youtube {
+    grid-area: main;
+    
+  
+}
+
+#videos-youtube h3 {
+    padding: 20px 25px;
+
+}
+
+#videos-youtube .videos-youtube-text {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 20px;
+    
+}
+
+.grid-conteiner3 {
+    width: 100%;  /* tamaño al contenedor */
+    margin: 0 auto;  /* centrar */
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "header-encabezado"
+    "main"
+    "footer";
+    grid-template-rows: 100px 120px auto 150px;
+}
+
+#reparacion-ecu { /* cont padre */
+    grid-area: main;
+    display: flex;
+    font-size: 20px;
+    align-items: center;  
+    padding: 55px 150px;
+    background-image: url(../imagenes/reparacion_de_ecu.JPG);
+  
+}
+   
+#reparacion-ecu .reparacion-cursos { /* cont hijo */
+    width: 450px;
+    margin: auto;
+    background: rgb(16 15 15 / 87%);
+    padding: 20px 20px;
+    border-radius: 7px;
+    color: white;
+    
+}
+
+.reparacion-ecu-checkbox {
+  width: 18px;
+       
+}
+.btn-formulario {
+    background-color: #31384A;
+    color: #fff;
+    padding: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+#header {                  /* menu de nav */                        
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px;
+    background-color:#333;
+    position: sticky;
+    top: 0;
+}
+#contenido-principal { /* contenido del index */
+    grid-area: main;
+    background-color: #222222;
+    display: grid;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    text-align: center;
+   
+  
+}
+
+#contenido-principal .ecupro img {  /* index */
+    height: 80%;
+    width: 50%;
+    border-radius: 7px;
+}
+
+
+/* .videos-youtube{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+} */
+#sidebar {                /* asaid letrero con boton contacto index */
+   
+    grid-area: aside;
+    background-color:#4b4a4a;
+
+}
+
+.letrero {                
+    grid-template-rows: 25%;
+    grid-template-columns: 50% 50%;
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#footer {
+    grid-area: footer;
+  
+     
+}
+.box-model {                  /* footer */
+    background-color: #050708;
+    padding: 20px 25px;
+    
+}
+
+.titulos-menu li {           /* menu */
+    list-style: none;                           
+    display: inline-block;
+}
+
+.titulos-menu li a {                   /* coloque color a letra menu  */
+    padding: 1px 5px;   
+    color: #0c0808;                     
+    text-decoration: none;
+    margin-right: 10px;              /*   para el boton ver */
+    background-color: white;
+    border: 1px solid white;
+}  
+
+ul li a:hover {
+    background:  black;      /*  animacion al boton menu*/
+    color: white;
+}
+
+.logo label{                      /* separe txt de logo */    
+    margin-left: 10px;
+    color: white;
+    padding: 10px;
+}
+
+#formulario {
+    background-image: url(../imagenes/img-contacto.jpg);
+    background-size: 100vw 100vh;  /* ancho y alto de la ventana */
+    background-attachment: fixed; /* no se mueve la img de fondo */
+    padding: 15px;
+       
+}
+#formulario .formulario-contacto {
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 20px;
+    border-radius: 7px; /* bordes form */
+    
+}
+#formulario .formulario-contacto h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px; /* esp del form y titulo */
+    
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+
+}
+textarea {
+    min-width: 100%;
+    max-height: 200px;
+    max-width: 100%;
+}
+#formulario .formulario-contacto .btn-formulario {
+    background-color: #31384A;
+    color: #fff;
+    padding: 10px; 
+}
+#formulario .formulario-contacto .label {
+    color: #fff;
+    font-size: 25px;
+    display: grid;
+    text-align: center;
+}
+.btn-formulario:hover {
+    cursor: pointer;
+}
+@media (max-width:480px)  {
+    #formulario {
+        width: 100%;
+    }
+}
+#contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(161, 159, 159);
+    text-align: center;
+    padding: 20px;
+}
+#contacto .contacto-lista  {
+    list-style: none;
+    font-size: 20px;
+    
+}
+.ecupro {             /* index */
+    background: #fff;
+    border-radius: 7px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    transition: all 2000ms linear 0ms;
+                                                       /*  color:  #007cba; */
+}
+/* pagina ecupro */
+.aparato-ecu {
+    display: flex;
+    align-items: center;
+}
+.aparato-ecu p {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 1%;
+}
+/* #articulo {
+       
+} */
+#articulo .articulo-text {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+#articulo .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding-left: 47px;
+    padding-top: 45px;
+    grid-column-gap: 150px;
+  
+}
