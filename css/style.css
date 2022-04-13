@@ -140,6 +140,37 @@ body {
    
   
 }
+.transition {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    transition: all 1s; /* 1000ms */
+}
+.transition:hover {
+    height: 95%;
+    width: 95%;
+    background-color: orange;
+}
+
+input {
+    background-color: white;
+    width: 100%;
+    transition: all 1s;
+}
+input:focus {
+    background-color: greenyellow;
+    width: 103%;
+    height: 100%;
+}
+#videos-youtube .rotate {
+  
+    transform: rotateZ(3deg);
+}
+#videos-youtube .rotate2 {
+   
+    transform: rotateZ(-3deg); 
+
+}
 
 #contenido-principal .ecupro img {  /* index */
     height: 80%;
