@@ -6,56 +6,56 @@
 body {
     font-family: 'GlacialIndifferenceBold';
 }
-.grid-container {  /* index */
-    width: 100%;  /* tamaño al contenedor */
-    margin: 0 auto;  /* centrar */
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "header "
-      "main"
-      "aside"
-      "footer";
-    grid-template-rows: 100px auto 150px 150px ;
-}
 
-.grid-conteiner2 {
-    width: 100%;  /* tamaño al contenedor */
-    margin: 0 auto;  /* centrar */
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "header-encabezado"
-    "main"
-    "aside"
-    "footer";
-    grid-template-rows: 100px 120px auto 150px 150px;
-}
+
+/* encabezado txt */
 #header-text  {
-    grid-area:header-encabezado;
     background-color: #1d11cc;
-    
+    height: 130px;
 }
 
 #header-text h2 {
-    padding-left: 140px;
-    padding-top: 25px; 
+    margin-bottom: 0;
     color: white;  
     font-family: 'GlacialIndifferenceBold';
     font-size: 50px;
-    text-align:justify   
+    margin-left: 150px;
+    padding-top: 20px;
 
-}   
+} 
+@media screen and (max-width: 480px) { /* desde 0 a 480 celu */
+    #header-text  {
+        background-color: #1d11cc;
+        height: 60px;
+    } 
+    #header-text h2 {
+        margin-bottom: 0;
+        color: white;  
+        font-family: 'GlacialIndifferenceBold';
+        font-size: 20px;
+        margin-left: 75px;
+        padding-top: 10px;
+    
+    }   
+
+}  
+/* pag cursos */
+
+#reparacion-ecu { /* cont padre */
+    color: #fff;
+    font-size: 20px;
+   /*  background-image: url(../imagenes/curso-ecupro.png); */
+    background-image: url(../imagenes/curso-ecupro.png);
+    background-size: 50vw 100vh;
+} 
+
+   
 #videos-youtube {
     grid-area: main;
-    
-  
 }
 
 #videos-youtube h3 {
     padding: 20px 25px;
-
 }
 
 #videos-youtube .videos-youtube-text {
@@ -63,105 +63,29 @@ body {
     flex-direction: row;
     justify-content:space-evenly;
     padding: 20px;
-    
-}
-
-.grid-conteiner3 {
-    width: 100%;  /* tamaño al contenedor */
-    margin: 0 auto;  /* centrar */
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "header-encabezado"
-    "main"
-    "footer";
-    grid-template-rows: 100px 120px auto 150px;
-}
-
-#reparacion-ecu { /* cont padre */
-    grid-area: main;
-    display: flex;
-    font-size: 20px;
-    align-items: center;  
-    padding: 55px 150px;
-    background-image: url(../imagenes/reparacion_de_ecu.JPG);
-  
-}
-   
-#reparacion-ecu .reparacion-cursos { /* cont hijo */
-    width: 450px;
-    margin: auto;
-    background: rgb(16 15 15 / 87%);
-    padding: 20px 20px;
-    border-radius: 7px;
-    color: white;
-    
-}
-
-.reparacion-ecu-checkbox {
-  width: 18px;
-       
-}
-.btn-formulario {
-    background-color: #31384A;
-    color: #fff;
-    padding: 10px; 
 }
 
 
+/* bootstrap index */
 
-
-
-
-
-
-
-
-#header {                  /* menu de nav */                        
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 35px;
-    background-color:#333;
-    position: sticky;
-    top: 0;
+.sidebar-texto {
+    color:#000000;
 }
-#contenido-principal { /* contenido del index */
-    grid-area: main;
-    background-color: #222222;
-    display: grid;
-    grid-template-rows: 350px 350px;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    text-align: center;
-   
-  
-}
-.transition {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #000;
-    transition: all 1s; /* 1000ms */
-}
-.transition:hover {
-    height: 95%;
-    width: 95%;
-    background-color: orange;
+      
+
+/* footer bootstrap */
+.redes-iconos{
+    text-decoration-line: none;
+
 }
 
+ 
 input {
     background-color: white;
     width: 100%;
     transition: all 1s;
 }
-input:focus {
-    background-color: greenyellow;
-    width: 103%;
-    height: 100%;
-}
+
 #videos-youtube .rotate {
   
     transform: rotateZ(3deg);
@@ -179,63 +103,15 @@ input:focus {
 }
 
 
-/* .videos-youtube{    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-} */
-#sidebar {                /* asaid letrero con boton contacto index */
-   
-    grid-area: aside;
-    background-color:#4b4a4a;
 
-}
+/* bootstrap esta si */
 
 .letrero {                
-    grid-template-rows: 25%;
-    grid-template-columns: 50% 50%;
     padding: 4em;
-    display: flex;
-    justify-content: space-around;
 }
 
 
-#footer {
-    grid-area: footer;
-  
-     
-}
-.box-model {                  /* footer */
-    background-color: #050708;
-    padding: 20px 25px;
-    
-}
-
-.titulos-menu li {           /* menu */
-    list-style: none;                           
-    display: inline-block;
-}
-
-.titulos-menu li a {                   /* coloque color a letra menu  */
-    padding: 1px 5px;   
-    color: #0c0808;                     
-    text-decoration: none;
-    margin-right: 10px;              /*   para el boton ver */
-    background-color: white;
-    border: 1px solid white;
-}  
-
-ul li a:hover {
-    background:  black;      /*  animacion al boton menu*/
-    color: white;
-}
-
-.logo label{                      /* separe txt de logo */    
-    margin-left: 10px;
-    color: white;
-    padding: 10px;
-}
+/* pag contacto */
 
 #formulario {
     background-image: url(../imagenes/img-contacto.jpg);
@@ -303,14 +179,7 @@ textarea {
     font-size: 20px;
     
 }
-.ecupro {             /* index */
-    background: #fff;
-    border-radius: 7px;
-    padding: 15px 15px;
-    border-radius: 15px;
-    transition: all 2000ms linear 0ms;
-                                                       /*  color:  #007cba; */
-}
+
 /* pagina ecupro */
 .aparato-ecu {
     display: flex;
@@ -322,9 +191,7 @@ textarea {
     text-decoration: underline;
     padding: 1%;
 }
-/* #articulo {
-       
-} */
+
 #articulo .articulo-text {
     text-align: center;
     padding: 40px;
