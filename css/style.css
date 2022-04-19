@@ -6,9 +6,22 @@
 body {
     font-family: 'GlacialIndifferenceBold';
 }
-
-
-/* encabezado txt */
+/* bootstrap index */
+.img-index {
+    border-radius: 7px;  /* curva */
+    box-shadow: 3px 3px 5px 3px #999; /* sombra */
+}
+.titulos-index {
+    letter-spacing: 0.1ch;
+    
+}
+.sidebar-texto {
+    color:#000000;
+}
+.encabezado-index {
+    background-color: #f3f3f3;
+}
+/* encabezado txt 4 pag */
 #header-text  {
     background-color: #1d11cc;
     height: 130px;
@@ -23,70 +36,89 @@ body {
     padding-top: 20px;
 
 } 
-@media screen and (max-width: 480px) { /* desde 0 a 480 celu */
-    #header-text  {
-        background-color: #1d11cc;
-        height: 60px;
-    } 
-    #header-text h2 {
-        margin-bottom: 0;
-        color: white;  
-        font-family: 'GlacialIndifferenceBold';
-        font-size: 20px;
-        margin-left: 75px;
-        padding-top: 10px;
+/* pag contacto iconos */
+#contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(161, 159, 159);
+    text-align: center;
     
-    }   
-
-}  
-/* pag cursos */
-
-#reparacion-ecu { /* cont padre */
-    color: #fff;
-    font-size: 20px;
-   /*  background-image: url(../imagenes/curso-ecupro.png); */
-    background-image: url(../imagenes/curso-ecupro.png);
-    background-size: 50vw 100vh;
-} 
-
-   
-#videos-youtube {
-    grid-area: main;
+}
+#contacto .contacto-img img{
+   max-width: 40%;
+   max-height: 40%;
+   margin-top: 15px;
+}
+#contacto .contacto-lista  {
+    list-style: none;
+    font-size: 20px;    
 }
 
+
+/* pagina ecupro */
+.aparato-ecu {
+    display: flex;
+    align-items: center;
+}
+.aparato-ecu p {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+#articulo .articulo-text {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+#articulo .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding-left: 47px;
+    padding-top: 45px;
+    grid-column-gap: 150px;
+  
+}
+/* pag funcionamiento */  
+/* #videos-youtube {
+    grid-area: main;
+} */
+
+#videos-youtube .nose img {
+    max-width: 10%;
+    max-height: 10%;
+
+}
+.tamaño {
+    max-width: 100%;
+    max-height: 100%;
+}
+#videos-youtube .nose {
+    background-color: #cccccc;
+    align-items: center;
+    padding: 1% 1%;
+    display: flex;
+
+}
+#videos-youtube h5 {
+    margin-left: 15px;
+}
 #videos-youtube h3 {
-    padding: 20px 25px;
+    text-align: center;
+    background-color: #cccccc;
 }
 
 #videos-youtube .videos-youtube-text {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    padding: 20px;
+    margin: 150px 150px;
 }
-
-
-/* bootstrap index */
-
-.sidebar-texto {
-    color:#000000;
-}
-      
-
-/* footer bootstrap */
-.redes-iconos{
-    text-decoration-line: none;
-
-}
-
- 
-input {
-    background-color: white;
-    width: 100%;
-    transition: all 1s;
-}
-
-#videos-youtube .rotate {
+/* #videos-youtube .rotate {
   
     transform: rotateZ(3deg);
 }
@@ -94,17 +126,21 @@ input {
    
     transform: rotateZ(-3deg); 
 
-}
+} */
 
-#contenido-principal .ecupro img {  /* index */
-    height: 80%;
-    width: 50%;
-    border-radius: 7px;
-}
+/* pag cursos */
+
+#reparacion-ecu { /* cont padre */
+    color: #fff;
+    font-size: 20px;
+    background-image: url(../imagenes/curso-ecupro.png);
+    background-size: 50vw 100vh;
+} 
+
+   
 
 
-
-/* bootstrap esta si */
+/* bootstrap esta si index y func */
 
 .letrero {                
     padding: 4em;
@@ -161,49 +197,57 @@ textarea {
 .btn-formulario:hover {
     cursor: pointer;
 }
-@media (max-width:480px)  {
-    #formulario {
+
+
+
+
+/* footer bootstrap */
+.redes-iconos{
+    text-decoration-line: none;
+
+}
+
+
+  /*   padding: 1rem 2rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 1.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    letter-spacing: 0.1ch; /* separa letras */
+   /*  background: #ffffff; */ 
+    
+   @media screen and (max-width: 480px) { /* desde 0 a 480 celu */
+    #header-text  {
+        background-color: #1d11cc;
+        height: 60px;
+    } 
+    #header-text h2 {
+        margin-bottom: 0;
+        color: white;  
+        font-family: 'GlacialIndifferenceBold';
+        font-size: 20px;
+        margin-left: 75px;
+        padding-top: 10px;
+    
+    }  
+    #contacto  {  /* iconos de pag contacto */
+       display: flex;
+       flex-direction: column;
+        
+    }
+    #formulario .formulario-contacto { /* form principal de pag cont */
         width: 100%;
     }
-}
-#contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(161, 159, 159);
-    text-align: center;
-    padding: 20px;
-}
-#contacto .contacto-lista  {
-    list-style: none;
-    font-size: 20px;
-    
-}
-
-/* pagina ecupro */
-.aparato-ecu {
-    display: flex;
-    align-items: center;
-}
-.aparato-ecu p {
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
-    padding: 1%;
-}
-
-#articulo .articulo-text {
-    text-align: center;
-    padding: 40px;
-    font-size: 18px;
-}
-#articulo .listas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;  
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
-    padding-left: 47px;
-    padding-top: 45px;
-    grid-column-gap: 150px;
-  
-}
+    #videos-youtube .videos-youtube-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .tamaño {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .nose {
+        display: flex;
+        flex-direction: column;
+    }
+ }
