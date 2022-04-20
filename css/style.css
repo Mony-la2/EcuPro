@@ -6,6 +6,81 @@
 body {
     font-family: 'GlacialIndifferenceBold';
 }
+
+.nav {
+    text-align: center;
+    z-index: 5;
+    
+  }
+  
+  .nav * {
+    transition: all .35s ease;
+  }
+  
+  /* .nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    
+  } */
+  
+  .nav a {
+    padding: .5em .8em;
+    /* color: rgba(255,255,255,.5); */
+    position: relative;
+   /*  text-decoration: none; */
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    transform: translate(100%, -50%)
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
 /* bootstrap index */
 .img-index {
     border-radius: 7px;  /* curva */
@@ -37,25 +112,45 @@ body {
 
 } 
 /* pag contacto iconos */
-#contacto {
+/* #contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(161, 159, 159);
+   
     text-align: center;
+ 
+   
     
 }
+.contacto-img {
+   border-color:black;
+   border-width: 1px;
+   border-style: solid;
+   background-color: #1d11cc;
+   position: relative;
+   top: -115px;
+   width: 310px;
+   
+}
+
 #contacto .contacto-img img{
    max-width: 40%;
    max-height: 40%;
    margin-top: 15px;
+   padding-top: 5px;
+
+  
+   
 }
 #contacto .contacto-lista  {
     list-style: none;
-    font-size: 20px;    
+    font-size: 20px; 
+      
+} */
+
+.contacto-lista {
+    list-style: none;
 }
-
-
 /* pagina ecupro */
 .aparato-ecu {
     display: flex;
@@ -216,7 +311,160 @@ textarea {
     letter-spacing: 0.1ch; /* separa letras */
    /*  background: #ffffff; */ 
     
-   @media screen and (max-width: 480px) { /* desde 0 a 480 celu */
+  
+       /* animaciones */
+ .titulos-index {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounceInRight ; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+  }
+  .app {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+  }
+
+
+  #contacto-card {
+    display:flex;
+    margin:0;
+    padding:0;
+    min-height: 50vh;
+    background: #444;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+  }
+
+  .card {
+      background-color: #444444;
+
+  }
+
+  .container .card{
+    position: relative;
+  }
+  
+  .container .card .face{
+    width:300px;
+    height: 200px;
+    transition:.4s;
+    
+  }
+  
+  .container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .container .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #2105c2,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px rgb(8, 21, 216),
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px rgb(21, 10, 184),
+      10px 0 80px #0ff;
+     
+  }
+  
+  
+  .container .card .face.face1 .content{
+    opacity: .2;
+    transition:  0.5s;
+    text-align: center;
+  
+  }
+  
+  .container .card:hover .face.face1 .content{
+    opacity: 1;
+   
+  }
+  
+  .container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+  }
+  
+  .container .card .face.face1 .content h3{
+    font-size: 1em;
+    
+    text-align: center;
+    
+  
+  }
+  
+  .container .card .face.face1 .content a{
+     transition: .5s;
+  }
+  
+  .container .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+  }
+  
+  .container .card:hover .face.face2{
+      transform: translateY(0);
+  
+  
+  }
+  
+  .container .card .face.face2 .content p, a{
+    font-size: 10pt;
+    margin: 0 ;
+    padding: 0;
+    color:#333;
+  }
+  
+  .container .card .face.face2 .content a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+    outline : 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+  }
+  
+  .container .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  
+
+  @media screen and (max-width: 480px) { /* desde 0 a 480 celu */
     #header-text  {
         background-color: #1d11cc;
         height: 60px;
@@ -249,5 +497,20 @@ textarea {
     .nose {
         display: flex;
         flex-direction: column;
+    }
+  
+ 
+     .container .card .face{
+        width:110%;
+        height: 200px;
+        transition:.4s;
+   
+        
+    }
+    .container .card .face.face1 {
+        padding: 122px;
+    }
+    .img-index {
+        width: 100%;
     }
  }
