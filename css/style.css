@@ -16,19 +16,11 @@ body {
   .nav * {
     transition: all .35s ease;
   }
-  
-  /* .nav li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: .5em 1em;
-    
-  } */
+
   
   .nav a {
     padding: .5em .8em;
-    /* color: rgba(255,255,255,.5); */
     position: relative;
-   /*  text-decoration: none; */
     font-size: 18px;
     padding: 10px 30px;
   }
@@ -71,16 +63,6 @@ body {
     color: white;
   }
 
-
-
-
-
-
-
-
-
-
-
 /* bootstrap index */
 .img-index {
     border-radius: 7px;  /* curva */
@@ -111,42 +93,6 @@ body {
     padding-top: 20px;
 
 } 
-/* pag contacto iconos */
-/* #contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-   
-    text-align: center;
- 
-   
-    
-}
-.contacto-img {
-   border-color:black;
-   border-width: 1px;
-   border-style: solid;
-   background-color: #1d11cc;
-   position: relative;
-   top: -115px;
-   width: 310px;
-   
-}
-
-#contacto .contacto-img img{
-   max-width: 40%;
-   max-height: 40%;
-   margin-top: 15px;
-   padding-top: 5px;
-
-  
-   
-}
-#contacto .contacto-lista  {
-    list-style: none;
-    font-size: 20px; 
-      
-} */
 
 .contacto-lista {
     list-style: none;
@@ -178,10 +124,6 @@ body {
     grid-column-gap: 150px;
   
 }
-/* pag funcionamiento */  
-/* #videos-youtube {
-    grid-area: main;
-} */
 
 #videos-youtube .nose img {
     max-width: 10%;
@@ -213,15 +155,6 @@ body {
     justify-content:space-evenly;
     margin: 150px 150px;
 }
-/* #videos-youtube .rotate {
-  
-    transform: rotateZ(3deg);
-}
-#videos-youtube .rotate2 {
-   
-    transform: rotateZ(-3deg); 
-
-} */
 
 /* pag cursos */
 
@@ -301,33 +234,22 @@ textarea {
     text-decoration-line: none;
 
 }
-
-
-  /*   padding: 1rem 2rem;
-    display: inline-block;
-    border: 3px solid #333333;
-    font-size: 1.5rem;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-    letter-spacing: 0.1ch; /* separa letras */
-   /*  background: #ffffff; */ 
     
-  
-       /* animaciones */
+ /* animaciones */
  .titulos-index {
     display: inline-block;
     margin: 0 0.5rem;
   
-    animation: bounceInRight ; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s; /* don't forget to set a duration! */
+    animation: bounceInRight ; 
+    animation-duration: 4s; 
   }
   .app {
     display: inline-block;
     margin: 0 0.5rem;
   
-    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s; /* don't forget to set a duration! */
+    animation: backInLeft;
+    animation-duration: 4s; 
   }
-
 
   #contacto-card {
     display:flex;
@@ -395,27 +317,21 @@ textarea {
     opacity: .2;
     transition:  0.5s;
     text-align: center;
-  
   }
   
   .container .card:hover .face.face1 .content{
     opacity: 1;
-   
-  }
+   }
   
   .container .card .face.face1 .content i{
     font-size: 3em;
     color: white;
     display: inline-block;
-     
-  }
+ }
   
   .container .card .face.face1 .content h3{
     font-size: 1em;
-    
     text-align: center;
-    
-  
   }
   
   .container .card .face.face1 .content a{
@@ -436,8 +352,6 @@ textarea {
   
   .container .card:hover .face.face2{
       transform: translateY(0);
-  
-  
   }
   
   .container .card .face.face2 .content p, a{
