@@ -1,0 +1,93 @@
+.nav {
+  text-align: center;
+  z-index: 5;
+}
+
+.nav * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.nav a {
+  padding: .5em .8em;
+  position: relative;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+
+.nav a::before, .nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  -webkit-transform: translate(-100%, 50%);
+          transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.nav a:hover:before, .nav a:hover:after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+#header-text {
+  background-color: #1d11cc;
+  height: 130px;
+}
+
+#header-text h2 {
+  margin-bottom: 0;
+  color: white;
+  font-family: 'GlacialIndifferenceBold';
+  font-size: 50px;
+  margin-left: 150px;
+  padding-top: 20px;
+}
+
+#reparacion-ecu {
+  color: #fff;
+  font-size: 20px;
+  background-image: url(../imagenes/curso-ecupro.png);
+  background-size: 50vw 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  #header-text {
+    background-color: #1d11cc;
+    height: 60px;
+  }
+  #header-text h2 {
+    margin-bottom: 0;
+    color: white;
+    font-family: 'GlacialIndifferenceBold';
+    font-size: 20px;
+    margin-left: 75px;
+    padding-top: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
