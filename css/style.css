@@ -88,17 +88,7 @@ body {
 #videos-youtube h5 {
   margin-left: 15px;
 }
-#videos-youtube h3 {
-  text-align: center;
-  background-color: #cccccc;
-}
 
-#videos-youtube .videos-youtube-text {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  margin: 150px 150px;
-}
 
 /* pag cursos */
 

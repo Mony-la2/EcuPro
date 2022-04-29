@@ -1,6 +1,8 @@
 @import 'vars';
 @import 'transitionHeader';
-
+@import 'mixing';
+@import 'map';
+@import 'extend';
 #header-text {
     background-color: $encabezadoColor;
     height: 130px;

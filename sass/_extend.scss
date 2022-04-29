@@ -1,0 +1,9 @@
+.img__marca {
+    width: 300px;
+    height: 150px;
+    
+}
+.img__marca__ecupro {
+    @extend .img__marca;
+    border: $boxborder;
+}
