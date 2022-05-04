@@ -1,0 +1,29 @@
+.aparato-ecu {
+    display: flex;
+    align-items: center;
+  
+    p {
+      font-size: 25px;
+      text-align: center;
+      text-decoration: underline;
+      padding: 10%;
+    }
+  }
+  
+  #articulo {
+    .articulo-txt {
+      text-align: justify;
+      padding: 40px;
+      font-size: 18px;
+    }
+  
+    .listas {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 15px;
+      padding-left: 47px;
+      padding-top: 45px;
+      grid-column-gap: 150px;
+    }
+  }

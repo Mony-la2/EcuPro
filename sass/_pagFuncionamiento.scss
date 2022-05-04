@@ -1,0 +1,93 @@
+.container-youtube .heading {
+    font-size: 3rem;
+    margin: 2rem;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-containerYoutube {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    .video {
+      height: 15rem;
+      width: 25rem;
+      margin: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      border-radius: 1rem;
+  
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          transition: .2s linear;
+          transform: scale(1.2);
+        }
+      }
+  
+      .active {
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 80%;
+        box-shadow: 0 0 0 100vh rgb(0, 0,.7);
+        z-index: 1;
+  
+        &:hover {
+          transition: none;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+  }
+  
+  /* pag funcionamiento img txt gris */
+  
+  #videos-youtube {
+    .nose {
+      img {
+        max-width: 10%;
+        max-height: 10%;
+      }
+  
+      background-color: #cccccc;
+      align-items: center;
+      padding: 5% 5%;
+      display: flex;
+    }
+  
+    h5 {
+      margin-left: 60px;
+    }
+  }
+  
+  .galeria-video {
+    height: 15rem;
+  
+    .tamaño {
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  
+  .galeria-funcionamiento-txt {
+    background-color: #cccccc;
+  
+    p {
+      font-size: 1vw;
+      color: #1f1e1e;
+      margin: 2% 20% 2% 20%;
+    }
+  }

@@ -1,0 +1,209 @@
+/* pag contacto */
+
+#formulario {
+    background-image: url(../imagenes/img-contacto.jpg);
+    background-size: 100vw 100vh;
+  
+    /* ancho y alto de la ventana */
+    background-attachment: fixed;
+  
+    /* no se mueve la img de fondo */
+    padding: 15px;
+  
+    .formulario-contacto {
+      width: 450px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px 20px;
+      border-radius: 7px;
+  
+      /* bordes form */
+  
+      h3 {
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+  
+        /* esp del form y titulo */
+      }
+    }
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    min-width: 100%;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+  #formulario .formulario-contacto {
+    .btn-formulario {
+      background-color: #31384A;
+      color: #fff;
+      padding: 10px;
+    }
+  
+    .label {
+      color: #fff;
+      font-size: 25px;
+      display: grid;
+      text-align: center;
+    }
+  }
+  
+  .btn-formulario:hover {
+    cursor: pointer;
+  }
+  
+  /* animaciones */
+  
+  .titulos-index {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounceInRight;
+    animation-duration: 4s;
+  }
+  
+  .app {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: backInLeft;
+    animation-duration: 4s;
+  }
+  
+  #contacto-card {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 50vh;
+    background: #444;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #444444;
+  }
+  
+  .container .card {
+    position: relative;
+  
+    .face {
+      width: 300px;
+      height: 200px;
+      transition: .4s;
+  
+      &.face1 {
+        position: relative;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+      }
+    }
+  
+    &:hover .face.face1 {
+      transform: translateY(0);
+      box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #2105c2, inset -20px 0 80px #0ff, inset 20px 0 300px rgb(8, 21, 216), inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px rgb(21, 10, 184), 10px 0 80px #0ff;
+    }
+  
+    .face.face1 .content {
+      opacity: .2;
+      transition: 0.5s;
+      text-align: center;
+    }
+  
+    &:hover .face.face1 .content {
+      opacity: 1;
+    }
+  
+    .face {
+      &.face1 .content {
+        i {
+          font-size: 3em;
+          color: white;
+          display: inline-block;
+        }
+  
+        h3 {
+          font-size: 1em;
+          text-align: center;
+        }
+  
+        a {
+          transition: .5s;
+        }
+      }
+  
+      &.face2 {
+        position: relative;
+        background: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        transform: translateY(-100px);
+      }
+    }
+  
+    &:hover .face.face2 {
+      transform: translateY(0);
+    }
+  
+    .face.face2 .content p {
+      font-size: 10pt;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+  }
+  
+  a {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container .card .face.face2 .content a {
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+  
+    &:hover {
+      background: #333;
+      color: whitesmoke;
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .contacto-lista {
+    list-style: none;
+    }

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'GlacialIndifferenceBold';
+  }
+  
+#header-text {
+    background-color: $encabezadoColor;
+    height: 130px;
+     h2 {
+        margin-bottom: 0;
+        color: $color;  
+        font-family: 'GlacialIndifferenceBold';
+        font-size: 50px;
+        margin-left: 150px;
+        padding-top: 20px;
+    
+    } 
+
+}
+
+.letrero {                
+    padding: 4em;
+  }
+
+#reparacion-ecu {
+    color: #fff;
+    font-size: 20px;
+    background-image: url(../imagenes/curso-ecupro.png);
+    background-size: 50vw 100vh;
+
+}
+.redes-iconos{
+    text-decoration-line: none;
+  
+  }

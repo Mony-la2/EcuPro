@@ -3,42 +3,12 @@
 @import 'mixing';
 @import 'map';
 @import 'extend';
-#header-text {
-    background-color: $encabezadoColor;
-    height: 130px;
-     h2 {
-        margin-bottom: 0;
-        color: $color;  
-        font-family: 'GlacialIndifferenceBold';
-        font-size: 50px;
-        margin-left: 150px;
-        padding-top: 20px;
-    
-    } 
-
-}
-
-#reparacion-ecu {
-    color: #fff;
-    font-size: 20px;
-    background-image: url(../imagenes/curso-ecupro.png);
-    background-size: 50vw 100vh;
-
-}
+@import 'pagFuncionamiento';
+@import'pagEcuPro';
+@import'pagContacto';
+@import'pageMain';
+@import'responsiveScreen';
 
 
-@media screen and (max-width:$mobile) {
-    #header-text  {
-        background-color: $encabezadoColor;
-        height: 60px;
-    } 
-    #header-text h2 {
-        margin-bottom: 0;
-        color: $color;  
-        font-family: 'GlacialIndifferenceBold';
-        font-size: 20px;
-        margin-left: 75px;
-        padding-top: 10px;
-    
-    }  
-}
+
+

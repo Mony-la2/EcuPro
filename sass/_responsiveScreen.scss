@@ -1,0 +1,69 @@
+@media screen and (max-width: 480px) {
+    #header-text {
+        background-color: $encabezadoColor;
+        height: 70px;
+         h2 {
+            margin-bottom: 0;
+            color: $color;  
+            font-family: 'GlacialIndifferenceBold';
+            font-size: 25px;
+            margin-left: 75px;
+            padding-top: 20px;
+        
+        } 
+    
+    }
+  
+    #contacto {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #formulario .formulario-contacto {
+      width: 100%;
+    }
+  
+    #videos-youtube .videos-youtube-text {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .tamaño {
+      max-width: 150px;
+      max-height: 200px;
+    }
+  
+    .nose {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container .card .face {
+      width: 110%;
+      height: 200px;
+      transition: .4s;
+  
+      &.face1 {
+        padding: 122px;
+      }
+    }
+  
+    .img-index {
+      width: 100%;
+    }
+    .aparato-ecu {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 15px;
+        text-align: center;
+        text-decoration: underline;
+        padding: 5%;
+      }
+      #articulo .listas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      }
+  }
