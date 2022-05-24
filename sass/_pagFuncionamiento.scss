@@ -1,5 +1,5 @@
-.container-youtube .heading {
-    font-size: 3rem;
+.container-youtube .heading h3 {
+    
     margin: 2rem;
     text-transform: capitalize;
     letter-spacing: .2rem;
@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
   
     .video {
       height: 15rem;
@@ -21,8 +22,8 @@
       border-radius: 1rem;
   
       video {
-        height: 100%;
-        width: 100%;
+        height: auto;
+        width: auto;
         object-fit: none;
         outline: none;
         border: none;
@@ -86,7 +87,6 @@
     background-color: #cccccc;
   
     p {
-      font-size: 1vw;
       color: #1f1e1e;
       margin: 2% 20% 2% 20%;
     }

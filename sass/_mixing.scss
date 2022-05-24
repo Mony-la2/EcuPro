@@ -1,9 +1,6 @@
 
 
 h1 {
-    font-size: 3rem;
-    margin: 2rem;
-    text-transform: capitalize;
     letter-spacing: .2rem;
     text-align: center;
     text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
@@ -14,15 +11,14 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 0.5fr 2fr;
     text-align: center;
-    border-radius: 6rem;
     justify-items: center;
 
 }
 @mixin video ($color) {
     margin: 50px 30px;
     box-shadow: 0 4px 8px 0 $color, 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 350px;
-    overflow: hidden; /* recorta excedente no se sale la img */
+    width: 450px;
+    overflow: hidden; 
     border-radius: 1rem;
     
     
@@ -51,10 +47,10 @@ h1 {
     @include hover-video;
     
 }
-.video-2:hover {
+/* .video-2:hover {
     @include hover-video;
     
-}
+} */
 .video-3:hover {
     @include hover-video;
     

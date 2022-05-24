@@ -1,7 +1,9 @@
 $text-size: ( 
-    h1: 3em,
-    h2: 2em,
-    h3: 1.5em
+    h1: 2em,
+    h2: 1.7em,
+    h3: 1.5em,
+    h5: 1.25em,
+    p: 1.0625em
 );
 h1 {
     font-size: map-get($map:$text-size , $key: h1);;
@@ -11,4 +13,11 @@ h2 {
 }
 h3 {
     font-size: map-get($map:$text-size , $key: h3);;
+}
+h5 {
+    font-size: map-get($map:$text-size , $key: h5);;
+  }
+p {
+    font-size: map-get($map:$text-size , $key: p);;
+
 }
